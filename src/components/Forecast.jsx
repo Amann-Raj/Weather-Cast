@@ -46,7 +46,7 @@ const Forecast = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-5xl mx-auto mt-6 mb-6 px-2">
       <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 shadow-2xl">
         <h3 className="text-white text-xl font-light mb-8 text-center">
           5-Day Forecast
@@ -58,8 +58,8 @@ const Forecast = () => {
                 key={index}
                 className={`text-center flex-1 rounded-xl p-2 ${
                   activeCard === index
-                    ? "border border-white/20 shadow-2xl"
-                    : "border border-transparent"
+                    ? "border border-white/40 shadow-2xl"
+                    : "border border-white/20"
                 }`}
               >
                 <p className="text-white/80 text-sm mb-3 font-medium">

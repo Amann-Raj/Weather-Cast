@@ -1,21 +1,34 @@
-@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* styles/scrollbar.css */
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Custom scrollbar styles */
 .custom-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: transparent transparent; /* Hidden by default */
+  scrollbar-color: transparent transparent;
   transition: scrollbar-color 0.3s ease;
 }
 
-/* Show scrollbar on hover */
 .custom-scrollbar:hover {
   scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.1);
 }
 
-/* Webkit scrollbar - hidden by default */
 .custom-scrollbar::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -33,7 +46,6 @@
   transition: background 0.3s ease;
 }
 
-/* Show webkit scrollbar on hover */
 .custom-scrollbar:hover::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -46,7 +58,6 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* Show scrollbar while scrolling */
 .custom-scrollbar.scrolling {
   scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.1);
 }

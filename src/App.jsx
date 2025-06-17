@@ -11,7 +11,7 @@ const App = () => {
   const { showHourly } = useContext(WeatherContext);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-700 to-slate-800 p-6 font-sans relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-[#0b0c10] via-[#10131a] to-black p-6 font-sans relative overflow-hidden">
       {/* Background Blobs */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-float"></div>
@@ -22,10 +22,10 @@ const App = () => {
       <div className="relative z-10 animate-fade-in">
         <div className="text-center mb-12 animate-slide-up">
           <h1 className="text-5xl font-bold text-white mb-3 transition-transform duration-300 hover:scale-105 tracking-tight drop-shadow-md">
-            Weather<span className="text-blue-400 hover:text-blue-400 transition-colors"> Cast</span>
+            Weather<span className="bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-transparent bg-clip-text"> Cast</span>
           </h1>
           <p className="text-white/90 text-lg font-light">
-            <span className="text-blue-400 font-medium hover:text-blue-400 transition-colors">
+            <span className="font-medium bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-transparent bg-clip-text">
               Wondering what the sky says?
             </span>{" "}
             Check the forecast.

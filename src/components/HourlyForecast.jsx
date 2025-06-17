@@ -13,7 +13,7 @@ const HourlyForecast = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto mt-6 mb-6 px-2">
+    <div className="max-w-5xl mx-auto mt-6 mb-6 px-2">
       <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 border border-white/20 shadow-2xl">
         <button
           className="px-4 py-2 mb-4 bg-white/20 rounded-full text-white text-sm"
@@ -28,7 +28,7 @@ const HourlyForecast = () => {
             {forecast.list.slice(beginSlice, endSlice).map((item, index) => (
               <div
                 key={index}
-                className="bg-white/10 min-w-[120px] p-4 rounded-xl text-white text-center backdrop-blur border border-white/20 flex-shrink-0"
+                className="bg-white/10 min-w-[105px] p-4 rounded-xl text-white text-center backdrop-blur border border-white/20 flex-shrink-0"
               >
                 <div className="text-sm mb-1">
                   <p>
