@@ -62,7 +62,7 @@ Weather-App/
 ├── public/
 │   └── index.html
 ├── src/
-│   ├── components/        # React components (SearchBar, WeatherDisplay, Forecast, etc.)
+│   ├── components/        # React components (SearchBar, WeatherInfo, Forecast, etc.)
 │   ├── context/           # React Context (e.g., WeatherContext.jsx)
 │   ├── App.jsx
 │   └── main.jsx
